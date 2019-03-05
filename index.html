@@ -3,6 +3,7 @@
 <head>
   <title>Dok y contents</title>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width" />
   <style>
     body {
     margin:5px ;
@@ -64,6 +65,12 @@
       text-decoration: none;
       color: Orange;
   }
+  .img-button{
+      font-size:15px;
+      text-decoration: none;
+      color: Orange;
+      font-style: italic;
+  }
 
 @media screen and (max-width: 980px) {
   body {
@@ -84,22 +91,23 @@
     <ul style="padding-left: 40px;">
     <li><a href="https://www.youtube.com/channel/UCo8ZNCAPYt__uA7TOkuKT3g"target="_black" class = "fontsize30px">Youtube Channel</a></li>
     <p style = "padding-top:100px"; style = "margin-top:100px;">
-    <li><a href="2.html" class = "fontsize30px">Coffee Shop</a></li>
+    <li><a href="2.html" class = "fontsize30px">Detail Pages</a></li>
     <p style = "padding-top:100px"; style = "margin-top:100px;">
-    <li><a href="3.html" class = "fontsize30px">Shopping</a></li>
+    <li><a href="3.html" class = "fontsize30px">Website</a></li>
     <p style = "padding-top:50px"; style = "margin-top:50px;">
 
   </ul>
-    <input style="color:orange; width: 56px;  margin-left: 40px;" type="button" value = "Switch" class="img-button" onclick="
 
-    if(document.querySelector('body').dataset.mode === 'Off') {
-    document.querySelector('body').style.backgroundImage = 'none';
-    document.querySelector('body').style.backgroundColor = 'black';
-    document.querySelector('body').dataset.mode = 'On';
+    <input style="color:orange; width: 56px;  padding-right: 3px; padding-left: 3px; margin-left: 40px;" type="button"  value = "Switch" class="img-button" onclick="
+    var target = document.querySelector('body');
+    if(target.dataset.mode === 'Off') {
+    target.style.backgroundImage = 'none';
+    target.style.backgroundColor = 'black';
+    target.dataset.mode = 'On';
     this.value = 'On';
   } else {
-    document.querySelector('body').style.backgroundImage = 'url(D.jpg)';
-    document.querySelector('body').dataset.mode = 'Off';
+    target.style.backgroundImage = 'url(D.jpg)';
+    target.dataset.mode = 'Off';
     this.value = 'Off';
   }
     ">
@@ -107,12 +115,9 @@
     <!-- <input style="color:orange; margin-left: 50px;" type = "button" value="On" class="img-button" onclick = "
       document.querySelector('body').style.backgroundImage = 'url(D.jpg)';
        ">
-
     <input style="color:orange; margin-left: 50px;" type = "button" value="Off" class="img-button" onclick = "
       document.querySelector('body').style.backgroundImage = 'none';
       document.querySelector('body').style.backgroundColor = 'black';
       "> -->
-
-
   </body>
   </html>
