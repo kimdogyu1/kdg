@@ -4,24 +4,43 @@
   <title>Dok y contents</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+
+  function Switch(self){
+    var target = document.querySelector('body');
+    if (target.dataset.mode === 'On'){
+      target.style.backgroundImage = 'url(D.jpg)';
+      target.dataset.mode = 'Off';
+
+      // self.value = 'Off';
+    }
+    else {
+      target.style.backgroundImage = 'none';
+      target.style.backgroundColor = 'black';
+      target.dataset.mode = 'On';
+
+      // self.value = 'On';
+    }
+  }
+  </script>
   <style>
-    body {
+  body {
     margin:5px ;
     background-image: url("D.jpg") ;
     background-size:100%;
-    }
+  }
 
-    h1 {
-      font-size:50px;
-      font-style: italic;
-      text-align: center;
-      text-decoration: none;
-      margin:0;
-      padding:20px;
-      text-shadow: 3px 2px gray;
 
+  h1 {
+    font-size:50px;
+    font-style: italic;
+    text-align: center;
+    text-decoration: none;
+    margin:0;
+    padding:20px;
+    text-shadow: 3px 2px gray;
     /*
-
     border-width:4px;
     border-color: gray;
     border-style: solid;
@@ -36,7 +55,7 @@
     padding:10px;
     text-shadow: 3px 2px orange;
     padding-bottom: 20px;
-}
+  }
   ul {
     font-style: italic;
     font-family: cursive;
@@ -51,73 +70,83 @@
     padding:3px;
     text-decoration: none;
   }
-   .img-button {
-     /* background: url("images/button_search.png") no-repeat; */
-     /* color: white; */
-     background-color: black;
-     /* border: none; */
-     width: 32px;
-     height: 32px;
-     cursor: pointer;
-   }
-  .fontsize30px {
-      font-size:30px;
-      text-decoration: none;
-      color: Orange;
-  }
-  .img-button{
-      font-size:15px;
-      text-decoration: none;
-      color: Orange;
-      font-style: italic;
+  /* input.img-button {
+  background: url("달.jpg") no-repeat;
+  border: none;
+  width:32px;
+  height:32px;
+  cursor: pointer;
+  } */
+  input {
+    vertical-align: middle;
+
   }
 
-@media screen and (max-width: 980px) {
-  body {
-    margin:5px ;
-    background-image: url("D.jpg") ;
-    background-size:cover;
+  .img-button {
+    background: url("Moon.jpg") no-repeat;
+    border: none;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    /* background-color: black; */
+    /* color: white; */
   }
-}
+  .img-button:active {
+		transform: translateY(4px);
+  }
+  .fontsize30px {
+    font-size:30px;
+    text-decoration: none;
+    color: Orange;
+  }
+  /* .img-button{
+  font-size:15px;
+  text-decoration: none;
+  color: Orange;
+  font-style: italic;
+  } */
+
+  @media screen and (max-width: 980px) {
+    body {
+      margin:5px ;
+      background-image: url("D.jpg") ;
+      background-size:cover;
+    }
+  }
 
   </style>
-  </head>
-  <body>
+</head>
+<body>
+  <h1> <a href ="index.html" class = "box1" class = "box2" style="color:orange;"> Dok Y Contents</a></h1>
+  <p style = "margin-top:50px;">
+    <h2 style="padding-left: 40px;">Contents
+      <input style="color:orange; width: 36px;  padding-right: 3px;
+      padding-left: 3px; margin-left: 20px;"
+      type="button"value = "" class="img-button" onclick="
+      Switch(this);
+      "></h2>
 
-    <h1> <a href ="index.html" class = "box1" class = "box2" style="color:orange;"> Dok Y Contents</a></h1>
-<p style = "margin-top:50px;">
-  <h2 style="padding-left: 40px;">Contents</h2>
+      <ul style="padding-left: 40px;">
+        <li><a href="https://www.youtube.com/channel/UCo8ZNCAPYt__uA7TOkuKT3g"target="_black" class = "fontsize30px">Youtube Channel</a></li>
+        <p style = "padding-top:100px"; style = "margin-top:100px;">
+          <li><a href="2.html" class = "fontsize30px">Detail Pages</a></li>
+          <p style = "padding-top:100px"; style = "margin-top:100px;">
+            <li><a href="3.html" class = "fontsize30px">Website</a></li>
+            <p style = "padding-top:50px"; style = "margin-top:50px;">
 
-    <ul style="padding-left: 40px;">
-    <li><a href="https://www.youtube.com/channel/UCo8ZNCAPYt__uA7TOkuKT3g"target="_black" class = "fontsize30px">Youtube Channel</a></li>
-    <p style = "padding-top:100px"; style = "margin-top:100px;">
-    <li><a href="2.html" class = "fontsize30px">Detail Pages</a></li>
-    <p style = "padding-top:100px"; style = "margin-top:100px;">
-    <li><a href="3.html" class = "fontsize30px">Website</a></li>
-    <p style = "padding-top:50px"; style = "margin-top:50px;">
+            </ul>
+            <!-- <input style="color:orange; width: 56px;  padding-right: 3px;
+            padding-left: 3px; margin-left: 40px;"
+            type="button"value = "" class="img-button" onclick="
+            Switch(this);
+            "> -->
 
-  </ul>
-
-    <input style="color:orange; width: 56px;  padding-right: 3px; padding-left: 3px; margin-left: 40px;" type="button"  value = "Switch" class="img-button" onclick="
-    var target = document.querySelector('body');
-    if(target.dataset.mode === 'Off') {
-    target.style.backgroundImage = 'none';
-    target.style.backgroundColor = 'black';
-    target.dataset.mode = 'On';
-    this.value = 'On';
-  } else {
-    target.style.backgroundImage = 'url(D.jpg)';
-    target.dataset.mode = 'Off';
-    this.value = 'Off';
-  }
-    ">
-
-    <!-- <input style="color:orange; margin-left: 50px;" type = "button" value="On" class="img-button" onclick = "
-      document.querySelector('body').style.backgroundImage = 'url(D.jpg)';
-       ">
-    <input style="color:orange; margin-left: 50px;" type = "button" value="Off" class="img-button" onclick = "
-      document.querySelector('body').style.backgroundImage = 'none';
-      document.querySelector('body').style.backgroundColor = 'black';
-      "> -->
-  </body>
-  </html>
+            <!-- <input style="color:orange; margin-left: 50px;" type = "button" value="On" class="img-button" onclick = "
+            document.querySelector('body').style.backgroundImage = 'url(D.jpg)';
+            ">
+            <input style="color:orange; margin-left: 50px;" type = "button" value="Off" class="img-button" onclick = "
+            document.querySelector('body').style.backgroundImage = 'none';
+            document.querySelector('body').style.backgroundColor = 'black';
+            "> -->
+          </body>
+          </html>
