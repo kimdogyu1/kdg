@@ -4,25 +4,28 @@
   <title>Dok y contents</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width" />
+  <link href="https://fonts.googleapis.com/css?family=Anton|Lobster" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
   function backgroundset(self) {
-  var target = document.querySelector('.img-button');
-  if (target.dataset.mode === 'On') {
-    target.style.backgroundImage = 'url(Moon.jpg)';
-    target.dataset.mode = 'Off';
+    var target = document.querySelector('.img-button');
+    if (target.dataset.mode === 'On') {
+      target.style.backgroundImage = 'url(images/Moon.jpg)';
+      target.dataset.mode = 'Off';
+
+    }
+    else {
+      target.style.backgroundImage = 'url(images/sun.jpg)';
+      target.dataset.mode = 'On';
+    }
   }
-  else {
-target.style.backgroundImage = 'url(sun.jpg)';
-    target.dataset.mode = 'On';
-  }
-}
 
   function Switch(self){
     var target = document.querySelector('body');
     if (target.dataset.mode === 'On'){
-      target.style.backgroundImage = 'url(D.jpg)';
+      target.style.backgroundImage = 'url(images/candles.jpg)';
       target.dataset.mode = 'Off';
+
       // backgroundset(1);
       // self.value = 'Off';
     }
@@ -38,8 +41,8 @@ target.style.backgroundImage = 'url(sun.jpg)';
   <style>
   body {
     margin:5px ;
-    background-image: url("D.jpg") ;
-    background-size:100%;
+    background-image: url("images/candles.jpg") ;
+    background-size:cover;
   }
 
 
@@ -51,11 +54,7 @@ target.style.backgroundImage = 'url(sun.jpg)';
     margin:0;
     padding:20px;
     text-shadow: 3px 2px gray;
-    /*
-    border-width:4px;
-    border-color: gray;
-    border-style: solid;
-    */
+
   }
   h2 {
     color: white;
@@ -69,7 +68,7 @@ target.style.backgroundImage = 'url(sun.jpg)';
   }
   ul {
     font-style: italic;
-    font-family: cursive;
+    font-family: 'Anton', sans-serif;
     width:300px;
     margin: 10px;
     padding: 5px;
@@ -77,89 +76,66 @@ target.style.backgroundImage = 'url(sun.jpg)';
 
   }
   .box1 {
-    border-bottom:3px solid orange;
+    border-bottom:1px solid #80808075;
     padding:3px;
     text-decoration: none;
-  }
-  /* input.img-button {
-  background: url("달.jpg") no-repeat;
-  border: none;
-  width:32px;
-  height:32px;
-  cursor: pointer;
-  } */
-  input {
-    vertical-align: middle;
 
   }
+
 
   .img-button {
-    background: url("Moon.jpg") no-repeat;
+    background: url("images/Moon.jpg") no-repeat;
     background-color: black;
     border: 2px solid black;
     border-radius: 50%;
     width: 32px;
     height: 32px;
     cursor: pointer;
-    /* background-color: black; */
-    /* color: white; */
+
   }
   .img-button:active {
-		transform: translateY(4px);
+    transform: translateY(4px);
   }
   .fontsize30px {
     font-size:30px;
     text-decoration: none;
     color: Orange;
   }
-  /* .img-button{
-  font-size:15px;
-  text-decoration: none;
-  color: Orange;
-  font-style: italic;
-  } */
 
-  @media screen and (max-width: 980px) {
+
+  @media screen and (max-width: 447px) {
     body {
       margin:5px ;
-      background-image: url("D.jpg") ;
-      background-size:cover;
+      background-image: none ;
+      background-color: black;
+
     }
+    .img-button {
+      background: none;
+      cursor: none;
+    }
+
   }
 
   </style>
 </head>
 <body>
-  <h1> <a href ="index.html" class = "box1" class = "box2" style="color:orange;"> Dok Y Contents</a></h1>
+  <h1> <a href ="index.html" class = "box1"  style="color:orange;"> Dok Y Contents</a></h1>
   <p style = "margin-top:50px;">
     <h2 style="padding-left: 40px;">Contents
-      <input style="color:orange; width: 36px;  padding-right: 3px;
+      <input  style="color:orange; width: 36px;  padding-right: 3px;
       padding-left: 3px; margin-left: 20px;"
       type="button"value = "" class="img-button" onclick="
       Switch(this);backgroundset(this);
       "></h2>
 
       <ul style="padding-left: 40px;">
-        <li><a href="https://www.youtube.com/channel/UCo8ZNCAPYt__uA7TOkuKT3g"target="_black" class = "fontsize30px">Youtube Channel</a></li>
+        <li><a href="login.html" class = "fontsize30px">Website</a></li>
         <p style = "padding-top:100px"; style = "margin-top:100px;">
-          <li><a href="2.html" class = "fontsize30px">Detail Pages</a></li>
+          <li><a href="" class = "fontsize30px">Made with React</a></li>
           <p style = "padding-top:100px"; style = "margin-top:100px;">
-            <li><a href="3.html" class = "fontsize30px">Website</a></li>
+            <li><a href="https://github.com/kimdogyu1/kdg.html"target="_black" class = "fontsize30px">Github Page</a></li>
             <p style = "padding-top:50px"; style = "margin-top:50px;">
-
             </ul>
-            <!-- <input style="color:orange; width: 56px;  padding-right: 3px;
-            padding-left: 3px; margin-left: 40px;"
-            type="button"value = "" class="img-button" onclick="
-            Switch(this);
-            "> -->
-
-            <!-- <input style="color:orange; margin-left: 50px;" type = "button" value="On" class="img-button" onclick = "
-            document.querySelector('body').style.backgroundImage = 'url(D.jpg)';
-            ">
-            <input style="color:orange; margin-left: 50px;" type = "button" value="Off" class="img-button" onclick = "
-            document.querySelector('body').style.backgroundImage = 'none';
-            document.querySelector('body').style.backgroundColor = 'black';
-            "> -->
           </body>
           </html>
