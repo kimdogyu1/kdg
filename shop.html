@@ -327,9 +327,9 @@ cursor: pointer;
   #slide ul:after{content:"";display:block;clear:both;}
   #slide li{float:left;width:25%;height:100%;}
   #slide li:nth-child(1){background:#faa;}
-  #slide li:nth-child(2){background:#ffa;}
-  #slide li:nth-child(3){background:#faF;}
-  #slide li:nth-child(4){background:#aaf;}
+  #slide li:nth-child(2){background:#aaf;}
+  #slide li:nth-child(3){background:#ffa;}
+  #slide li:nth-child(4){background:#faF;}
   #slide input{display:none;}
   #slide label{display:inline-block;vertical-align:middle;width:10px;height:10px;border:2px solid #666;background:#fff;transition:0.3s;border-radius:50%;cursor:pointer;}
   #slide .pos{text-align:center;position:absolute;bottom:2px;left:0;width:100%;text-align:center;}
@@ -350,14 +350,29 @@ cursor: pointer;
 
   <ul>
     <li style="padding-top:10px;">
-      <img src="images/남자모델5.jpg"  style="width:296px; height:270px;">&emsp;
-      <img src="images/여자모델1.jpg"  style="width:296px; height:270px;">&emsp;
-      <img src="images/여자모델4.jpg"  style="width:296px; height:270px;">&emsp;
-      <img src="images/여자모델3.jpg"  style="width:297px; height:270px;">
+      <img src="images/여자옷2.jpg"  style="width:296px; height:270px;">&emsp;
+      <img src="images/여자옷3.jpg"  style="width:296px; height:270px;">&emsp;
+      <img src="images/여자옷1.jpg"  style="width:296px; height:270px;">&emsp;
+      <img src="images/여자옷5.jpg"  style="width:297px; height:270px;">
     </li>
-    <li></li>
-    <li></li>
-    <li></li>
+    <li style="padding-top:10px;">
+      <img src="images/남자옷1.jpg"  style="width:296px; height:270px;">&emsp;
+      <img src="images/남자옷2.jpg"  style="width:296px; height:270px;">&emsp;
+      <img src="images/남자옷3.jpg"  style="width:296px; height:270px;">&emsp;
+      <img src="images/남자옷4.jpg"  style="width:297px; height:270px;">
+    </li>
+    <li style="padding-top:10px;">
+      <img src="images/커플5.jpg"  style="width:296px; height:270px;">&emsp;
+      <img src="images/커플2.jpg"  style="width:296px; height:270px;">&emsp;
+      <img src="images/커플3.jpg"  style="width:296px; height:270px;">&emsp;
+      <img src="images/커플4.jpg"  style="width:297px; height:270px;">
+    </li>
+    <li style="padding-top:10px;">
+      <img src="images/운동화1.jpg"  style="width:296px; height:270px;">&emsp;
+      <img src="images/운동화2.jpg"  style="width:296px; height:270px;">&emsp;
+      <img src="images/운동화3.jpg"  style="width:296px; height:270px;">&emsp;
+      <img src="images/운동화4.jpg"  style="width:297px; height:270px;">
+    </li>
   </ul>
   <p class="pos">
     <label for="pos1"></label>
@@ -370,22 +385,98 @@ cursor: pointer;
 <style>
 #footer2{
   background-color: #f5e4e4;
-  display: -webkit-inline-box;
   font-family: 'Anton', sans-serif;
   font-size: 1.2em;
   font-weight: 15em;
   /* border: 3px solid #6969691f; */
-  height: 130px;
   width:1230px;
   border:2px solid #decccc;
 }
+#footer2 h2{
+  font-family: 'Anton', sans-serif;
+  text-decoration: none;
+  color: black;
+  font-weight: 15em;
+  font-size: 18px;
+  /* border: 3px solid #6969691f; */
+}
+#footer2 h6{
+  font-family: 'Anton', sans-serif;
+  text-decoration: none;
+  color: black;
+  font-weight: 0;
+  font-size: 12px;
+
+  /* border: 3px solid #6969691f; */
+}
+#footer3 a {
+  text-decoration:none;
+  color:black;
+}
 </style>
 
-<div id="footer2" style="margin-top:15px; padding:15px 5px 5px 15px;">
-  Custom
+<div id="footer2" style="margin-top:15px; padding:50px 5px 5px 15px;">
+  <table>
+    <tr>
+      <td>
+        <h2>고객센터</h2>
+        1599-3333<br>
+        <h6 style="font-weight:0;">
+          평일09:00 ~ 18:00 ( 점심시간 12:00 ~ 13:00 )
+        </h6>
+        <br>
+      </td>
+      <td style="padding-left:100px;">
+        <h2>은행정보</h2>
+        <h6>
+          예금주:김도규<br>
+          신한 : 11047212009<br>
+          우리 : 1105221997112<br>
+          농협 : 3010324998712<br>
+        </h6>
+      </td>
+
+      <td style="padding-left:100px;">
+        <h2>반품주소</h2>
+        <h6>
+          CJ대한통운(1588-1255)<br>
+          CJ대한통운반품주소:우편번호0334422<br>
+          강원도 춘천시 중앙로 2길 112-11<br>
+          ※타택배 이용 자제(반송될수 있습니다.)<br>
+        </h6>
+      </td>
+
+      <td style="padding-left:100px;">
+        <div id="kakao-map" style="width:350px; height:200px;"></div>
+
+      </td>
+
+    </tr>
+  </table>
+
+  <h6 style="text-align:center; margin-top:50px; margin-bottom:30px;">회사명 : ( 주 )도규컴퍼니 / 대표이사:김도규 /
+    사업장주소:강원도 춘천시 소양로 2가 107-21 / 사업자등록번호:221:88:00125
+     / 개인정보보호책임자:김도규 ( rnrdkxoa1@naver.com )</h6>
+<div id="footer3"style="text-align:center; text-decoration:none; color:black;">
+     <p/>&copy; <a href="index.html">Home</a>
+     <p/>
+     <a href="login.html" style = "margin-left: 10px;">Prev</a>
+     <a href="#">Next</a>
+</div>
+
 </div>
 
 </footer>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ae942b9ca5e3fd7e249282cb403adad9">
+</script>
+<script>
+var container = document.getElementsById('kakao-map');
+var options = {
+  center: new daum.maps.LatLng(33.450701, 126.570667),
+  level: 3
+};
+var map = new daum.mpas.Map(container, options);
+</script>
 
 </body>
 </html>
