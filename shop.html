@@ -447,10 +447,17 @@ cursor: pointer;
       </td>
 
       <td style="padding-left:100px;">
-        <div id="kakao-map" style="width:350px; height:200px;"></div>
-
+        <div id="map" style="width:350px; height:200px;"></div>
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ae942b9ca5e3fd7e249282cb403adad9"></script>
+        <script>
+        var container = document.getElementsById('map');
+        var options = {
+          center: new daum.maps.LatLng(33.450701, 126.570667),
+          level: 3
+        };
+        var map = new daum.mpas.Map(container, options);
+        </script>
       </td>
-
     </tr>
   </table>
 
@@ -463,20 +470,8 @@ cursor: pointer;
      <a href="login.html" style = "margin-left: 10px;">Prev</a>
      <a href="#">Next</a>
 </div>
-
 </div>
-
 </footer>
-<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ae942b9ca5e3fd7e249282cb403adad9">
-</script>
-<script>
-var container = document.getElementsById('kakao-map');
-var options = {
-  center: new daum.maps.LatLng(33.450701, 126.570667),
-  level: 3
-};
-var map = new daum.mpas.Map(container, options);
-</script>
 
 </body>
 </html>
