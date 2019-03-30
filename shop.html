@@ -10,7 +10,14 @@
   <script src="js/shop.js"></script>
   <title>DokY Shop</title>
 </head>
+
 <style>
+@media screen and (min-width: 1260px) {
+	body {
+		transform: scale(1.5) translateY(17%) translateX(17%);
+		margin-bottom: 10px;
+		}
+	}
 body {
   background-image: none;
   background-size:cover;
@@ -457,6 +464,8 @@ cursor: pointer;
       		};
 
       		var map = new daum.maps.Map(container, options);
+
+          var markerPosition = new daum.maps.LatLng(37.886641, 127.724621);
 
           var marker = new daum.maps.Marker({
             position : markerPosition
