@@ -457,6 +457,12 @@ cursor: pointer;
       		};
 
       		var map = new daum.maps.Map(container, options);
+
+          var marker = new daum.maps.Marker({
+            position : markerPosition
+          });
+
+          marker.setMap(map);
       	</script>
       </td>
     </tr>
