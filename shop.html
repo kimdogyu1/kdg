@@ -56,7 +56,7 @@ body {
 /* Shirts, Jeans text*/
 .donot li, .donot li, .donot2 li, .donot3 li, .donot4 li{
   list-style: none;
-  display: -webkit-inline-box;
+  display: inline-flex;
   background-color: none;
   position: absolute;
   z-index: 200;
@@ -105,7 +105,7 @@ body {
         <label for="root">MEN</label>
         <div class="donot">
           <ul>
-            <li>
+            <li style="visibility: hidden">
               <div class="line"><a href="3.html">Jackets</a></div>
               <div class="line"><a href="3.html">Coats</a></div>
               <div class="line"><a href="3.html">Shirts</a></div>
@@ -120,7 +120,7 @@ body {
         <label for="root2">UNISEX</label>
         <div class="donot2">
           <ul>
-            <li>
+            <li style="visibility: hidden">
               <div class="line"><a href="3.html">Jackets</a></div>
               <div class="line"><a href="3.html">T-Shirts</a></div>
               <div class="line"><a href="3.html">Hoodies</a></div>
@@ -135,7 +135,7 @@ body {
         <label for="root3">ACC</label>
         <div class="donot3">
           <ul>
-            <li>
+            <li style="visibility: hidden">
               <div class="line"><a href="3.html">Sneakers</a></div>
               <div class="line"><a href="3.html">Flats Shoes</a></div>
               <div class="line"><a href="3.html">Hats</a></div>
@@ -149,7 +149,7 @@ body {
         <label for="root4">MD</label>
         <div class="donot4">
           <ul>
-            <li>
+            <li style="visibility: hidden">
               <div class="line"><a href="3.html">2019 Special</a></div>
               <div class="line"><a href="3.html">2020 Special</a></div>
             </li>
@@ -292,36 +292,32 @@ cursor: pointer;
 </div>
 
 
-
-
-
-
-
-<div id="columns2" style="margin-left:360px; margin-top:5px;" >
-  <span style="margin-left:350px;">
-    <span   style="color: white;
-    margin-left: 400px;
-    font-family: 'Lobster', sans-serif;
-    transform: translateY(15%);
-    border-color: #4d4242;
-    border-style: solid;
-    border-width: 2px;
-    position: absolute;
-    height: 40px;
-    padding-top: 5px;
-    padding-bottom: 0px;
-    padding-left: 15px;
-    padding-right: 15px;
-    font-size: 1.5em;
-    color:#670a0a;
-    cursor: pointer;
-    display: inline-table;
-    ">Shop ACC</span>
-    <img src="images/남자모델1.jpg"  style="width:475px; height:400px;
-    margin-left: 65px;
-    border:2px solid #decccc; border-top:none;">
-  </span>
-  <h1 style="transform:translateX(80%) translateY(-120%); position:absolute;">Clearance Sale</h1>
+<table style="width:1250px;height:410px; border:1px solid #decccc;">
+  <tr>
+    <td style="width:385px; height:300px; "></td>
+    <td style="width:385px; height:300px; background-color:cornsilk;">
+      <h1 style="transform:translateX(70%) translateY(400%); position:absolute;">Clearance Sale</h1></td>
+      <td><img src="images/남자모델1.jpg" style="width:475px; height:400px"></td>
+      <span   style="color: white;
+      margin-left: 1100px;
+      font-family: 'Lobster', sans-serif;
+      transform: translateY(15%);
+      border-color: #4d4242;
+      border-style: solid;
+      border-width: 2px;
+      position: absolute;
+      height: 40px;
+      padding-top: 5px;
+      padding-bottom: 0px;
+      padding-left: 15px;
+      padding-right: 15px;
+      font-size: 1.5em;
+      color:#670a0a;
+      cursor: pointer;
+      display: inline-table;
+      ">Shop ACC</span>
+  </tr>
+</table>
 </div>
 </section>
 <p/>
