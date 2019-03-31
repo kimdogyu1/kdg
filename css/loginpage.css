@@ -1,9 +1,10 @@
 
 body {
-  background-image:url("../images/blackrain.jpg");
-  background-size:cover;
+  /* background-image:url("../images/blackrain.jpg");
+  background-size:cover; */
+  background: linear-gradient( 45deg, #1a3a2c, #383449 );
 }
- 
+
 #header {
   text-align: center;
   /* padding-top: 30px; */
