@@ -1,85 +1,49 @@
-﻿// $(function() {
-//
-// 	// Vars.
-// 		var	$window = $(window),
-// 			$body = $('body'),
-// 			$wrapper = $('#wrapper');
-//
-// 	// Breakpoints.
-// 		skel.breakpoints({
-// 			xlarge:	'(max-width: 1680px)',
-// 			large:	'(max-width: 1280px)',
-// 			medium:	'(max-width: 980px)',
-// 			small:	'(max-width: 736px)',
-// 			xsmall:	'(max-width: 480px)'
-// 		});
-//
-// 	// Disable animations/transitions until everything's loaded.
-// 		$body.addClass('is-loading');
-//
-// 		$window.on('load', function() {
-// 			$body.removeClass('is-loading');
-// 		});
-//
-// 	// Poptrox.
-// 		$window.on('load', function() {
-//
-// 			$('.thumbnails').poptrox({
-// 				onPopupClose: function() { $body.removeClass('is-covered'); },
-// 				onPopupOpen: function() { $body.addClass('is-covered'); },
-// 				baseZIndex: 10001,
-// 				useBodyOverflow: false,
-// 				usePopupEasyClose: true,
-// 				overlayColor: '#000000',
-// 				popupLoaderText: '',
-// 				overlayOpacity: 0.75,
-// 				fadeSpeed: 500,
-// 				usePopupDefaultStyling: false,
-// 				windowMargin: (skel.breakpoint('small').active ? 5 : 50)
-// 			});
-//
-// 		});
-//
-// });
 
+// opacity를 따로 줬던 이유 크롬에 맞추다가 익스플로러 호환 못한다는거 뒤는게 인지
 $(document).ready(function(){
   $("#root").hover(function(){
     $(".donot").css("opacity", "100");
-
+    $(".donot li").css("visibility", "visible");
   }, function(){
     $(".donot").css("opacity", "0");
+    $(".donot li").css("visibility", "hidden");
   });
 });
 
 $(document).ready(function(){
   $("#root2").hover(function(){
     $(".donot2").css("opacity", "100");
+    $(".donot2 li").css("visibility", "visible");
 
   }, function(){
     $(".donot2").css("opacity", "0");
+    $(".donot2 li").css("visibility", "hidden");
   });
 });
 
 $(document).ready(function(){
   $("#root3").hover(function(){
     $(".donot3").css("opacity", "100");
+    $(".donot3 li").css("visibility", "visible");
 
   }, function(){
     $(".donot3").css("opacity", "0");
+    $(".donot3 li").css("visibility", "hidden");
   });
 });
 
 $(document).ready(function(){
   $("#root4").hover(function(){
     $(".donot4").css("opacity", "100");
-
+    $(".donot4 li").css("visibility", "visible");
   }, function(){
     $(".donot4").css("opacity", "0");
+    $(".donot4 li").css("visibility", "hidden");
   });
 });
 
 function counter(){
-		var saledday = new Date("april 7,2019,09:00:00").getTime();
+		var saledday = new Date("april 28,2019,09:00:00").getTime();
 		setInterval(function(){
 			var now = new Date();
 			var period = saledday - now;
