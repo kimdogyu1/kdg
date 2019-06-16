@@ -1,11 +1,9 @@
-
-// opacity를 따로 줬던 이유 크롬에 맞추다가 익스플로러 호환 못한다는거 뒤는게 인지
-$(document).ready(function(){
+﻿﻿$(document).ready(function(){
   $("#root").hover(function(){
-    $(".donot").css("opacity", "100");
+   $(".donot").css("opacity", "100");
     $(".donot li").css("visibility", "visible");
   }, function(){
-    $(".donot").css("opacity", "0");
+   $(".donot").css("opacity", "0");
     $(".donot li").css("visibility", "hidden");
   });
 });
@@ -42,8 +40,9 @@ $(document).ready(function(){
   });
 });
 
+
 function counter(){
-		var saledday = new Date("December 28,2019,09:00:00").getTime();
+		var saledday = new Date("july 28,2019,09:00:00").getTime();
 		setInterval(function(){
 			var now = new Date();
 			var period = saledday - now;
@@ -59,6 +58,23 @@ function counter(){
 			$('.content3').html(m)
 			$('.content4').html(s)
 
-		}, 1000); //1초마다 표시 1분씩은 60000
+		}, 1000); 
 	}
 	counter();
+
+  function toggleA(){
+    document.getElementById('pic1').src = "images/v23.jpg";
+    document.getElementById('pic2').src = "images/v5.jpg";
+    document.getElementById('pic3').src = "images/v9.jpg";
+    document.getElementById('pic4').src = "images/v20.jpg";
+    document.getElementById('label1').style.background = "gray";
+    document.getElementById('label2').style.background = "#fff";
+  }
+  function toggleB(){
+    document.getElementById('pic1').src = "images/vv1.jpg"
+    document.getElementById('pic2').src = "images/vv2.jpg"
+    document.getElementById('pic3').src = "images/vv3.jpg"
+    document.getElementById('pic4').src = "images/vv4.jpg"
+    document.getElementById('label1').style.background = "#fff";
+    document.getElementById('label2').style.background = "gray";
+  }

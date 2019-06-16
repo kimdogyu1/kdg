@@ -1,13 +1,14 @@
 
 body {
-  background: linear-gradient( 45deg, #1a3a2c, #383449 );
+  background-image:url("../images/blackrain.jpg");
+  background-size:cover;
 }
-
+ 
 #header {
   text-align: center;
   /* padding-top: 30px; */
 }
-/* ìƒë‹¨ ì‚¬ì§„ì„ ë‹´ê³ ìˆëŠ” wrapper */
+/* »ó´Ü »çÁøÀ» ´ã°íÀÖ´Â wrapper */
 #header .avatar {
   border-radius: 100%;
   display: inline-block;
@@ -18,7 +19,7 @@ body {
   border-width: thick;
   cursor: pointer;
 }
-/* ìƒë‹¨ ì´ë¯¸ì§€ */
+/* »ó´Ü ÀÌ¹ÌÁö */
 #header .avatar img {
   border-radius: 100%;
   display: block;
@@ -37,7 +38,7 @@ fieldset {
   margin: auto;
   margin-bottom: 1em;
 }
-/* ê° ì¸í’‹ box íƒ€ì…ë³„ ì™¸ê´€ ì„¤ì • */
+/* °¢ ÀÎÇ² box Å¸ÀÔº° ¿Ü°ü ¼³Á¤ */
 input[type="text"],input[type="password"]{
   background: rgba(255, 255, 255, 0.075);
   border: solid 1px rgba(255, 255, 255, 0.25);
@@ -73,7 +74,7 @@ input[type="submit"] {
   font-size: 1.2em;
   font-weight: 15em;
   cursor: pointer;
-}/*ì™¸ê´€ì„¤ì • ë */
+}/*¿Ü°ü¼³Á¤ ³¡ */
 
 #header ul.icons {
   margin: 1.5em 0 1.5em 0;
@@ -111,5 +112,5 @@ text-decoration: none;
   font-weight: 15em;
 }
 #footer a{
-  color: #b7adad;
+  color: #ffffffab;
 }
