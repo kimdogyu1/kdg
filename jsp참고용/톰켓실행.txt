@@ -1,0 +1,7 @@
+shutdown.bat
+
+startup.bat
+
+http://localhost:8080/BBS/xx.jsp
+
+cd/JSP/apache-tomcat-8.5.38/bin
