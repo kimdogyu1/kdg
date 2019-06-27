@@ -1,0 +1,76 @@
+﻿body {
+	margin: auto;
+	background: linear-gradient(180deg, black, orange);
+	background-size: cover;
+	font-family: 'Anton', sans-serif;
+}
+h1 {
+	font-size: 50px;
+	font-style: italic;
+	text-align: center;
+	text-decoration: none;
+	margin: 0;
+	padding: 20px;
+	text-shadow: 3px 2px gray;
+}
+h2 {
+	color: white;
+	font-style: italic;
+	font-size: 40px;
+	text-decoration: none;
+	margin: 0;
+	padding: 10px;
+	text-shadow: 3px 2px orange;
+	padding-bottom: 40px;
+}
+ul {
+	font-style: italic;
+	font-family: 'Anton', sans-serif;
+	width: 300px;
+	margin: 10px;
+	padding: 5px;
+	color: white;
+}
+.box1 {
+	border-bottom: 1px solid #80808075;
+	padding: 3px;
+	text-decoration: none;
+}
+.img-button {
+	background: url("images/Moon.jpg") no-repeat;
+	background-color: black;
+	border: 2px solid black;
+	border-radius: 50%;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+}
+.img-button:active {
+	transform: translateY(4px);
+}
+.fontsize30px {
+	font-size: 30px;
+	text-decoration: none;
+	color: #e4b1a1;
+;
+}
+@media screen and (max-width: 447px) {
+	body {
+		margin: auto;
+		background-image: none;
+		background-color: black;
+	}
+	.img-button {
+		background: none;
+		cursor: none;
+	}
+}
+	
+	@media screen and (min-width: 1280px) {
+	body {
+		transform: scale(1.3) translate(15%, 10%);
+	}
+	h1 {
+	text-align: left;
+	}
+}
