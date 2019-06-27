@@ -37,7 +37,7 @@ ul {
 	text-decoration: none;
 }
 .img-button {
-	background: url("../images/Moon.jpg") no-repeat;
+	background: url("images/Moon.jpg") no-repeat;
 	background-color: black;
 	border: 2px solid black;
 	border-radius: 50%;
