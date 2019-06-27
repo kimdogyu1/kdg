@@ -147,23 +147,7 @@ ul {
 			target="_black" class="fontsize30px">Github Page</a></li>
 		<p style="padding-top: 50px" ; style="margin-top:50px;">
 	</ul>
-	<% 
-	String userID = null;
-	if (session.getAttribute("userID")!= null) {
-		userID = (String) session.getAttribute("userID");
-	}
-	int pageNumber = 1;
-	if (request.getParameter("pageNumber")!= null) {
-		pageNumber = Integer.parseInt(request.getParameter("pageNumber"));
-	}
-	%>
 	
-	<style>
-	td {
-	border : 1px solid black;
-	width:80px;
-	}
-	</style>
 
 </body>
 </html>
