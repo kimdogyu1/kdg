@@ -16,7 +16,7 @@ body {
 #header .avatar {
   border-radius: 100%;
   display: inline-block;
-  margin: 3em 0 3em 0;
+  margin: 10px 0 20px 0;
   padding: 0.5em;
   border: solid 0.1em #915460;
   background-color: rgba(29, 27, 27, 0.8);
