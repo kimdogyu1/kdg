@@ -19,7 +19,7 @@
 			<span class="avatar"><img src="images/jung1.jpg" alt="연예인 및 크리에이터 사진" onclick="play();"/></span>
 
 
-			<form method="post" action="shop.html">
+			<form method="post" action="#">
 			<div>
 				<fieldset>
 					<input autocomplete="off"  type="text" name="userID" maxlength="30" id="txtUserID"
@@ -30,10 +30,10 @@
 
 				</fieldset>
 
-				<div class = "loginbox">
-					<input type="submit"  value="L O G I N"
-						 id="btnLogin" class="btnLogin" onclick="alert('해당 기능은 Dynamic Page를 
+				<div class = "loginbox" onclick="alert('해당 기능은 Dynamic Page를 
 					       이용해주세요.')">
+					<input type="submit"  value="L O G I N"
+						 id="btnLogin" class="btnLogin">
 					 </div>
 
 				 </div>
@@ -41,10 +41,10 @@
 
 
 				<ul class="icons">
-					<li><a href="#" class="icon-gplus" onclick="alert('해당 기능은 Dynamic Page를 
-					       이용해주세요.')"><span class="label">google</span></a></li>
-					<li><a href="#" class="icon-facebook-squared" onclick="alert('해당 기능은 Dynamic Page를 
-					       이용해주세요.')"><span class="label">>Facebook</span></a></li>
+					<li onclick="alert('해당 기능은 Dynamic Page를 
+					       이용해주세요.')"><a href="#" class="icon-gplus"><span class="label">google</span></a></li>
+					<li onclick="alert('해당 기능은 Dynamic Page를 
+					       이용해주세요.')"><a href="#" class="icon-facebook-squared"><span class="label">>Facebook</span></a></li>
 					<li><a href="shop.html" class="icon-login"><span class="label">비회원 로그인</span></a></li>
 				</ul>
 			
