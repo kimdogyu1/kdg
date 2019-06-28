@@ -135,6 +135,7 @@ footer a{
 header {
   text-align: center;
 }
+}
 
 	
 	
@@ -142,6 +143,7 @@ header {
 	html {
 	height: -webkit-fill-available;
 	}
+}
 
 @media screen and (max-width: 400px) {
 	body {
