@@ -45,6 +45,9 @@ footer a{
   body{
     transform: scale(1.4) translateY(80px);
   }
+  table {
+  width:35%;
+  }
 }
 @media screen and (max-width: 400px) {
   body {
