@@ -166,13 +166,18 @@ header {
   font-size: 1.2em;
   font-weight: 15em;
 }
+	
 footer a{
   text-decoration:none;
   color:#e4b1a1;
 }
 	
 }
-	
+
+footer a{
+  text-decoration:none;
+  color:#e4b1a1;
+}
 	
 
 
