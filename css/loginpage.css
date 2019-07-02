@@ -113,7 +113,8 @@ footer{
   font-weight: 15em;
 }
 footer a{
-  color: #ffffffab;
+  text-decoration:none;
+  color:#e4b1a1;
 }
 
 
