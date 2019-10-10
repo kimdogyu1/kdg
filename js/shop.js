@@ -42,7 +42,7 @@ $(document).ready(function(){
 
 
 function counter(){
-		var saledday = new Date("september 28,2019,09:00:00").getTime();
+		var saledday = new Date("december 28,2019,09:00:00").getTime();
 		setInterval(function(){
 			var now = new Date();
 			var period = saledday - now;
